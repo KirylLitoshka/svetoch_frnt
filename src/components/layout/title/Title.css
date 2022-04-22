@@ -1,0 +1,42 @@
+.title-page {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-page__content {
+    min-width: 400px;
+}
+
+.title-page__content > .title-page__button:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.title-page__button {
+    color: teal;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid teal;
+}
+
+.title-page__button-link {
+    display: block;
+    padding: 20px 50px;
+    transition: all ease-in 0.1s;
+
+}
+
+.title-page__button:hover .title-page__button-link {
+    color: white;
+    background-color: teal;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
