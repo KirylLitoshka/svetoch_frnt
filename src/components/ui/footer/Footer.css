@@ -1,0 +1,10 @@
+.footer {
+    border-top: 2px solid teal;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+}
