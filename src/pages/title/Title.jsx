@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import MenuList from "../../components/title_menu/MenuList";
+import MenuList from "../../components/menu/MenuList";
 import Loader from "../../components/ui/loader/Loader";
 import useFetching from "../../hooks/useFetching";
 import Error from "../../components/ui/error/Error";
