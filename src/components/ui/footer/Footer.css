@@ -1,7 +1,6 @@
 .footer {
     border-top: 2px solid teal;
-    padding: 15px 0;
-    font-weight: bold;
+    padding: 10px 0;
 }
 
 .footer__content {
