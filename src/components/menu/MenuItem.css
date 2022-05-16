@@ -1,0 +1,21 @@
+.menu-list__item {
+    width: 100%;
+    text-align: center;
+}
+
+.menu-list__link {
+    display: block;
+    padding: 20px 40px;
+    background-color: teal;
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    transition: all ease-in-out 0.1s ;
+}
+
+.menu-list__link:hover {
+    background-color: inherit;
+    color: teal;
+    border: 3px solid teal;
+    transform: scale(1.1);
+}
