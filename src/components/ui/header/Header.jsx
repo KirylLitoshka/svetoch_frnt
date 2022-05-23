@@ -1,12 +1,13 @@
 import React from 'react';
 import "./Header.css"
+import { Link } from "react-router-dom"
 
 const Header = (props) => {
   return (
     <header className="header">
       <div className="container">
         <div className="header__content">
-          <a href="/">На главную</a>
+          <Link to="/">На главную</Link>
         </div>
         {props.currentApp &&
             <div>
