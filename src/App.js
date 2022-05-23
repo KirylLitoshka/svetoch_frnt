@@ -1,15 +1,21 @@
-import React, {useState} from "react";
-import "./styles/App.css";
-import AppRouter from "./routes/main/AppRouter";
-
+import React from "react";
+import Header from "./components/ui/header/Header";
+import Footer from "./components/ui/footer/Footer";
+import Main from "./pages/main/Main";
+import MainRoutes from "./routes/MainRoutes";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
-  const [currentSystem, setCurrentSystem] = useState({})
-
   return (
-      <div className="page-wrapper">
-        <AppRouter currentApp={currentSystem} changeCurrentApp={setCurrentSystem} />
-      </div>
+    <div className="page-wrapper">
+      <Router>
+        <Header />
+        <Main>
+          <MainRoutes />
+        </Main>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
