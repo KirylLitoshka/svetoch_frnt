@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+}
+
+.main-page {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
