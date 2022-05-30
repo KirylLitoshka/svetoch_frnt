@@ -1,0 +1,25 @@
+.renter-item {
+    display: flex;
+    padding: 5px 0;
+    transition: all 0.1s linear;
+}
+
+.renter-item:hover:not(:first-child) {
+    cursor: pointer;
+    border: 1px solid teal;
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+
+.renter-item:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.renter-item > * {
+    width: 23%;
+    text-align: center;
+    align-self: center;
+}
