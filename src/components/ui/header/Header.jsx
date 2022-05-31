@@ -1,22 +1,22 @@
 import React from 'react';
 import "./Header.css"
-import { Link } from "react-router-dom"
+import Nav from "../navbar/Nav";
 
 const Header = (props) => {
-  return (
-    <header className="header">
-      <div className="container">
-        <div className="header__content">
-          <Link to="/">На главную</Link>
-        </div>
-        {props.currentApp &&
-            <div>
-              {props.currentApp.alt_name}
+    return (
+        <header className="header">
+            <div className="container">
+                <div className="header__content">
+                    <Nav/>
+                </div>
+                {props.currentApp &&
+                    <div>
+                        {props.currentApp.alt_name}
+                    </div>
+                }
             </div>
-        }
-      </div>
-    </header>
-  );
+        </header>
+    );
 };
 
 export default Header;
