@@ -1,7 +1,7 @@
 import React from 'react';
-import "./Main.css";
+import "./MainWrapper.css";
 
-const Main = (props) => {
+const MainWrapper = (props) => {
   return (
       <main className="main">
         <div className="container">
@@ -13,4 +13,4 @@ const Main = (props) => {
   );
 };
 
-export default Main;
+export default MainWrapper;

@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/ui/header/Header";
 import Footer from "./components/ui/footer/Footer";
-import Main from "./pages/main/Main";
+import MainWrapper from "./components/menu/MainWrapper";
 import MainRoutes from "./routes/MainRoutes";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -10,9 +10,9 @@ function App() {
     <div className="page-wrapper">
       <Router>
         <Header />
-        <Main>
+        <MainWrapper>
           <MainRoutes />
-        </Main>
+        </MainWrapper>
         <Footer />
       </Router>
     </div>
