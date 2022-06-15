@@ -1,9 +1,13 @@
 import React from 'react';
 import "./RenterItem.css"
 
-const RenterItem = ({item}) => {
+const RenterItem = ({item, modalVisible, setItemID}) => {
     return (
-        <div className="renter-item">
+        <div className="renter-item" onClick={() => {
+            modalVisible(true)
+            setItemID(item.id)}
+        }
+        >
             {/*{Object.entries(item).map((item, index) => <div key={index}>{item.}</div>)}*/}
             <div className="renters-item_field">
                 {item.name}
@@ -19,6 +23,9 @@ const RenterItem = ({item}) => {
             </div>
             <div className="renters-item_field">
                 {item.phone}
+            </div>
+            <div className="renters-item_field">
+                control panel
             </div>
         </div>
     );
