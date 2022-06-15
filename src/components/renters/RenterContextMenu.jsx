@@ -4,17 +4,17 @@ import {Link} from "react-router-dom";
 
 const RenterContextMenu = ({itemID}) => {
     return (
-        <React.Fragment>
-            <div className="context-menu">
+        <div className="modal-menu">
+            <div className="modal-menu_link">
                 <Link to="asd" state={{itemID: itemID}}>Объекты</Link>
             </div>
-            <div className="context-menu">
+            <div className="modal-menu_link">
                 <Link to="qwe" state={{itemID: itemID}}>Начисление</Link>
             </div>
-            <div className="context-menu">
+            <div className="modal-menu_link">
                 <Link to="zxc" state={{itemID: itemID}}>Просто строка</Link>
             </div>
-        </React.Fragment>
+        </div>
     );
 };
 
